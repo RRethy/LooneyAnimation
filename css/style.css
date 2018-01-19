@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'tiltlooneytunesbt-webfont';
+  src: url('tiltlooneytunesbt-webfont.woff');
+  src: url('tiltlooneytunesbt-webfont.woff2');
+}
+
+body{
+  background: #8e0418;
+}
+
+.ring{
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.centreimg{
+  position: absolute;
+  width: 15%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  animation: grow 2.8s 1.9s both ease-in;
+}
+
+.mytext{
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.icon{
+  margin: 10px;
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  animation: grow backwards 0.3s 5.1s;
+  transition: transform .3s;
+}
+
+.icon:hover{
+   transform: scale(1.4) rotate(360deg);
+}
+
+#desc{
+  width: 50%;
+  font-family: 'Acme', sans-serif;
+  font-size: 15px;
+  animation: fartherdb 1s 4.1s both cubic-bezier(.49,.01,.7,1);
+  top: 75%
+}
+
+#name{
+  line-height: 90px;
+  font-family: 'tiltlooneytunesbt-webfont';
+  font-size: 30px;
+  top: 11%;
+  animation: dropbounce 1s 4.1s both cubic-bezier(.49,.01,.7,1);
+}
+
+#description1{
+  top: 66%;
+}
+
+#description2{
+  top: 70%;
+}
+
+#description3{
+  top: 74%;
+}
+
+#description4{
+  top: 78%;
+}
+
+#ic_container{
+  position: absolute;
+  text-align: center;
+  top: 85%;
+  right: 0;
+  left: 0;
+}
+
+#ring1{
+  width: 91%;
+  height: 160%;
+  background-color: #9e161b;
+  animation: grow backwards 1s,
+             shrink 0.3s 1s linear,
+             normalize 1s 1.3s,
+             sink both 0.8s 2.7s;
+}
+
+#ring2{
+  width: 73%;
+  height: 130%;
+  background-color: #a9251e;
+  animation: grow backwards 1s 0.5s,
+             shrink 0.3s 1.5s linear,
+             normalize 1s 1.8s,
+             sink both 0.8s 3s;
+}
+
+#ring3{
+  width: 56%;
+  height: 100%;
+  background-color: #b23120;
+  animation: grow backwards 1s 0.9s,
+             shrink 0.3s 1.9s linear,
+             normalize 1s 2.2s,
+             sink both 0.8s 3.3s;
+}
+
+#ring4{
+  width: 39%;
+  height: 70%;
+  background-color: #b83a22;
+  animation: grow backwards 1s 1.2s,
+             shrink 0.3s 2.2s linear,
+             normalize 1s 2.5s,
+             sink both 0.8s 3.6s;
+}
+
+#inner_ring{
+  width: 23%;
+  height: 40%;
+  background-color: #0f2e51;
+  animation: grow backwards 1s 1.6s,
+             shrink 0.3s 2.6s linear,
+             normalize 1s 2.9s,
+             sink both 0.8s 3.9s;
+}
+
+/*// KEYFRAMES //*/
+
+@keyframes grow{
+  from{ transform: scale(0, 0) }
+  to{ transform: scale(1, 1) }
+}
+
+@keyframes shrink{
+  from{ transform: scale(1, 1) }
+  to{ transform: scale(0.95, 0.95) }
+}
+
+@keyframes normalize{
+  from{ transform: scale(0.95, 0.95) }
+  to{ transform: scale(1, 1) }
+}
+
+@keyframes sink{
+  0%{ box-shadow: none }
+  100%{ box-shadow: inset 0 0 40px #000000 }
+}
+
+@keyframes dropbounce{
+  0%{ transform: translateY(-300%) }
+  50%{ transform: translateY(0%) }
+  75%{ transform: translateY(-20%) }
+  100%{ transform: translateY(0%) }
+}
+
+@keyframes fartherdb{
+  0%{ transform: translateY(-2000%) }
+  50%{ transform: translateY(0%) }
+  75%{ transform: translateY(-30%) }
+  100%{ transform: translateY(0%) }
+}
+@keyframes swell{
+  from{ transform: scale(1, 1) }
+  to{ transform: scale(2, 2) }
+}
