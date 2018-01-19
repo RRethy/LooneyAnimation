@@ -31,69 +31,6 @@ body{
   animation: grow 2.8s 1.9s both ease-in;
 }
 
-.mytext{
-  position: absolute;
-  color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.icon{
-  margin: 10px;
-  margin-top: 20px;
-  width: 30px;
-  height: 30px;
-  animation: grow backwards 0.3s 5.1s;
-  transition: transform .3s;
-}
-
-.icon:hover{
-   transform: scale(1.4) rotate(360deg);
-}
-
-#desc{
-  width: 50%;
-  font-family: 'Acme', sans-serif;
-  font-size: 15px;
-  animation: fartherdb 1s 4.1s both cubic-bezier(.49,.01,.7,1);
-  top: 75%
-}
-
-#name{
-  line-height: 90px;
-  font-family: 'tiltlooneytunesbt-webfont';
-  font-size: 30px;
-  top: 11%;
-  animation: dropbounce 1s 4.1s both cubic-bezier(.49,.01,.7,1);
-}
-
-#description1{
-  top: 66%;
-}
-
-#description2{
-  top: 70%;
-}
-
-#description3{
-  top: 74%;
-}
-
-#description4{
-  top: 78%;
-}
-
-#ic_container{
-  position: absolute;
-  text-align: center;
-  top: 85%;
-  right: 0;
-  left: 0;
-}
-
 #ring1{
   width: 91%;
   height: 160%;
