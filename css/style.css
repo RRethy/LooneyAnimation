@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'tiltlooneytunesbt-webfont';
-  src: url('tiltlooneytunesbt-webfont.woff');
-  src: url('tiltlooneytunesbt-webfont.woff2');
-}
-
 body{
   background: #8e0418;
 }
@@ -17,18 +11,6 @@ body{
   right: 0;
   margin: auto;
   overflow: hidden;
-}
-
-.centreimg{
-  position: absolute;
-  width: 15%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  overflow: hidden;
-  animation: grow 2.8s 1.9s both ease-in;
 }
 
 #ring1{
@@ -101,22 +83,4 @@ body{
 @keyframes sink{
   0%{ box-shadow: none }
   100%{ box-shadow: inset 0 0 40px #000000 }
-}
-
-@keyframes dropbounce{
-  0%{ transform: translateY(-300%) }
-  50%{ transform: translateY(0%) }
-  75%{ transform: translateY(-20%) }
-  100%{ transform: translateY(0%) }
-}
-
-@keyframes fartherdb{
-  0%{ transform: translateY(-2000%) }
-  50%{ transform: translateY(0%) }
-  75%{ transform: translateY(-30%) }
-  100%{ transform: translateY(0%) }
-}
-@keyframes swell{
-  from{ transform: scale(1, 1) }
-  to{ transform: scale(2, 2) }
 }
